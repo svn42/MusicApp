@@ -1,0 +1,89 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary_dark_color</item>
+        <item name="colorPrimaryDark">@color/primary_dark_color</item>
+    </style>
+
+    <!-- Style for Song and Artist -->
+    <style name="MainStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/list_item_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <!-- Style for Song  in Playing Section -->
+    <style name="PlayingSong">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/playing_song</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <!-- Style for Artist  in Playing Section -->
+    <style name="PlayingArtist">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/playing_artist</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Style for a search bar  -->
+    <style name="SearchBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/search_bar_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:imeOptions">flagNoFullscreen|actionDone</item>
+    </style>
+
+    <!-- Style for a start bar  -->
+    <style name="Start">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/list_item_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+    </style>
+
+    <style name="DarkGrayLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/lineHeight</item>
+        <item name="android:background">@color/primary_color</item>
+    </style>
+
+    <style name="ListItemTop">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <style name="ListItemBottom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

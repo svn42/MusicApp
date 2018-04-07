@@ -1,0 +1,16 @@
+<resources>
+    <!-- Height of each list item -->
+    <dimen name="list_item_height">80dp</dimen>
+    <!-- Height of each search bar -->
+    <dimen name="search_bar_height">48dp</dimen>
+    <!-- Height of grey view line -->
+    <dimen name="lineHeight">2dp</dimen>
+    <!-- Height of playing song -->
+    <dimen name="playing_song">48dp</dimen>
+    <!-- Height of playing artist -->
+    <dimen name="playing_artist">32dp</dimen>
+    <!-- Margins -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <!-- Title for the application. -->
+    <string name="app_name">Musify</string>
+    <string name="songs">Songs</string>
+    <string name="artists">Artists</string>
+    <string name="search">Search</string>
+    <string name="searchHint">Search for song or artist...</string>
+    <string name="songsbyartist">Songs by Artist</string>
+    <string name="playing">Playing</string>
+    <string name="title_activity_playing">PlayingActivity</string>
+</resources>

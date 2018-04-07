@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_dark_color"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicapp.MainActivity">
+
+    <TextView
+        style="@style/Start"
+        android:background="@color/primary_dark_color"
+        android:text="@string/playing" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- https://www.sheetmusicdirect.com/fortnight/img/placeholder.png-->
+        <ImageView
+
+            android:id="@+id/placeholder"
+            android:layout_width="match_parent"
+            android:layout_weight="70"
+            android:layout_height="0dp"
+            android:background="@color/category_background"
+            android:scaleType="centerInside"
+            android:src="@drawable/placeholder" />
+        <TextView
+            android:layout_weight="8"
+            android:layout_height="0dp"
+            android:id="@+id/currentlyPlayingSong"
+            style="@style/PlayingSong"
+            android:background="@color/primary_dark_color"
+            tools:text="All That You Want" />
+
+        <TextView
+            android:layout_weight="5"
+            android:layout_height="0dp"
+            android:id="@+id/currentlyPlayingArtist"
+            style="@style/PlayingArtist"
+            android:background="@color/primary_dark_color"
+            tools:text="Schnabbadibauz" />
+
+
+        <ImageView
+            android:id="@+id/timebar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:paddingTop="24dp"
+            android:paddingBottom="16dp"
+            android:background="@color/primary_dark_color"
+            android:src="@drawable/timebar" />
+
+        <!--https://cdn.dribbble.com/users/45516/screenshots/544311/music_buttons.png -->
+        <ImageView
+            android:id="@+id/music_buttons"
+            android:layout_width="match_parent"
+            android:layout_weight="15"
+            android:layout_height="0dp"
+            android:background="@color/primary_dark_color"
+            android:src="@drawable/music_buttons" />
+    </LinearLayout>
+</LinearLayout>
