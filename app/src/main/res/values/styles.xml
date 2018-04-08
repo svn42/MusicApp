@@ -10,7 +10,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/list_item_height</item>
         <item name="android:gravity">center_vertical</item>
-        <item name="android:padding">16dp</item>
+        <item name="android:padding">@dimen/normal_padding</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
@@ -23,7 +23,9 @@
         <item name="android:gravity">center</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textSize">22sp</item>
+        <item name="android:textSize">@dimen/playing_song_text</item>
+        <item name="android:layout_marginTop">@dimen/normal_padding</item>
+
     </style>
 
     <!-- Style for Artist  in Playing Section -->
@@ -32,7 +34,7 @@
         <item name="android:layout_height">@dimen/playing_artist</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@android:color/white</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">@dimen/playing_artist_text</item>
     </style>
 
     <!-- Style for a search bar  -->
@@ -40,9 +42,9 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/search_bar_height</item>
         <item name="android:gravity">center</item>
-        <item name="android:padding">16dp</item>
-        <item name="android:paddingStart">16dp</item>
-        <item name="android:paddingEnd">16dp</item>
+        <item name="android:padding">@dimen/normal_padding</item>
+        <item name="android:paddingStart">@dimen/normal_padding</item>
+        <item name="android:paddingEnd">@dimen/normal_padding</item>
         <item name="android:textColor">@android:color/black</item>
         <item name="android:textStyle">italic</item>
         <item name="android:textAppearance">?android:textAppearanceSmall</item>
@@ -55,7 +57,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/list_item_height</item>
         <item name="android:gravity">center</item>
-        <item name="android:padding">16dp</item>
+        <item name="android:padding">@dimen/normal_padding</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAppearance">?android:textAppearanceLarge</item>
@@ -81,6 +83,12 @@
         <item name="android:textAppearance">?android:textAppearanceSmall</item>
     </style>
 
+    <style name="TimeBarImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:paddingTop">@dimen/normal_padding</item>
+        <item name="android:paddingBottom">@dimen/normal_padding</item>
+    </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 

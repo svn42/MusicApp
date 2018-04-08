@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -19,6 +20,7 @@ public class ArtistsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.artist_list);
+
         TextView title = findViewById(R.id.Start);
         title.setText("Artists");
 
@@ -28,6 +30,7 @@ public class ArtistsActivity extends AppCompatActivity {
         ArtistAdapter adapter = new ArtistAdapter(this, artistList);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
+        ImageView backButton = findViewById(R.id.backButton);
 
 
         //Intent to new activity
@@ -45,6 +48,15 @@ public class ArtistsActivity extends AppCompatActivity {
             }
         });
 
+        // Set a click listener on backButton
+        backButton.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers View is clicked on.
+            @Override
+            public void onClick(View view) {
+                Intent backIntent = new Intent(ArtistsActivity.this, MainActivity.class);
+                startActivity(backIntent);
+            }
+        });
     }
 
 }

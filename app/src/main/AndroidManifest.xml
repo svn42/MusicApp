@@ -18,10 +18,11 @@
         </activity>
         <activity
             android:name=".SongsActivity"
-            android:label="@string/songs" />
+            android:label="@string/songs"/>
         <activity
             android:name=".ArtistsActivity"
-            android:label="@string/artists" />
+            android:label="@string/artists"
+            />
         <activity
             android:name=".SongsByArtistActivity"
             android:label="@string/songsbyartist" />
@@ -30,7 +31,8 @@
             android:label="@string/title_activity_playing" />
         <activity
             android:name=".SearchActivity"
-            android:label="@string/search" />
+            android:label="@string/search"
+            />
     </application>
 
 </manifest>

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -24,6 +25,7 @@ public class SongsByArtistActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String artistName = intent.getExtras().getString("incoming");
+        ImageView backButton = findViewById(R.id.backButton);
 
         // Create a list of songs
         ArrayList<Song> songs = sl.getSongListByArtist(artistName);
@@ -47,8 +49,19 @@ public class SongsByArtistActivity extends AppCompatActivity {
                 Intent songIntent = new Intent(SongsByArtistActivity.this, PlayingActivity.class);
                 songIntent.putExtra("artist", artistName);
                 songIntent.putExtra("song", songName);
+                songIntent.putExtra("source", "SongsByArtistActivity");
                 startActivity(songIntent);
 
+            }
+        });
+
+        // Set a click listener on backButton
+        backButton.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers View is clicked on.
+            @Override
+            public void onClick(View view) {
+                Intent backIntent = new Intent(SongsByArtistActivity.this, ArtistsActivity.class);
+                startActivity(backIntent);
             }
         });
     }

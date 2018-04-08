@@ -10,11 +10,26 @@
     android:orientation="vertical"
     tools:context="com.example.android.musicapp.MainActivity">
 
-    <TextView
-        android:id="@+id/Start"
-        style="@style/Start"
-        android:background="@color/primary_dark_color"
-        android:text="@string/songs" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Start"
+            style="@style/Start"
+            android:background="@color/primary_dark_color"
+            android:text="@string/artists" />
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="@dimen/list_item_height"
+            android:layout_height="@dimen/list_item_height"
+            android:src="@drawable/back_button"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/large_padding"
+            />
+    </RelativeLayout>
 
 
     <LinearLayout

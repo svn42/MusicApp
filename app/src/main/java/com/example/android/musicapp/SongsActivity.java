@@ -7,6 +7,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,6 +31,7 @@ public class SongsActivity extends AppCompatActivity {
         SongAdapter adapter = new SongAdapter(this, songs);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
+        ImageView backButton = findViewById(R.id.backButton);
 
 
         //Intent to new activity
@@ -44,8 +46,20 @@ public class SongsActivity extends AppCompatActivity {
                 Intent songIntent = new Intent(SongsActivity.this, PlayingActivity.class);
                 songIntent.putExtra("artist", artistName);
                 songIntent.putExtra("song", songName);
+                songIntent.putExtra("source", "SongsActivity");
+
                 startActivity(songIntent);
 
+            }
+        });
+
+        // Set a click listener on backButton
+        backButton.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers View is clicked on.
+            @Override
+            public void onClick(View view) {
+                Intent backIntent = new Intent(SongsActivity.this, MainActivity.class);
+                startActivity(backIntent);
             }
         });
     }

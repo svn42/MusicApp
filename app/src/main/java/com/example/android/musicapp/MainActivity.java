@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         TextView songs = (TextView) findViewById(R.id.songs);
         TextView artists = (TextView) findViewById(R.id.artists);
 
-        // Set a click listener on that songs
+        // Set a click listener on songs
         songs.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers View is clicked on.
             @Override
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Set a click listener on that artists
+        // Set a click listener on artists
         artists.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers View is clicked on.
             @Override
